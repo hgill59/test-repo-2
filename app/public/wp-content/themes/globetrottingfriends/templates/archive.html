@@ -1,0 +1,53 @@
+<!-- wp:template-part {"slug":"header","area":"uncategorized"} /-->
+
+<!-- wp:group {"tagName":"main","metadata":{"name":"Main"},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group"><!-- wp:cover {"url":"wp-content/themes/globetrottingfriends/assets/images/archive-template-banner.png","dimRatio":10,"isDark":false,"style":{"color":[]},"layout":{"type":"default"}} -->
+<div class="wp-block-cover is-light"><img class="wp-block-cover__image-background" alt="" src="wp-content/themes/globetrottingfriends/assets/images/archive-template-banner.png" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-background-dim-10 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:query-title {"type":"archive","textAlign":"center","style":{"elements":{"link":{"color":{"text":"var:preset|color|white"}}}},"textColor":"white"} /--></div></div>
+<!-- /wp:cover -->
+
+<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"top"}} -->
+<div class="wp-block-group"><!-- wp:group {"layout":{"type":"flex","orientation":"vertical"}} -->
+<div class="wp-block-group"><!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Categories</h3>
+<!-- /wp:heading -->
+
+<!-- wp:categories {"showEmpty":true} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Tags</h3>
+<!-- /wp:heading -->
+
+<!-- wp:categories {"taxonomy":"post_tag"} /-->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Author</h3>
+<!-- /wp:heading -->
+
+<!-- wp:post-author /--></div>
+<!-- /wp:group -->
+
+<!-- wp:query {"queryId":2,"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true,"taxQuery":null,"parents":[],"format":[]}} -->
+<div class="wp-block-query"><!-- wp:post-template {"layout":{"type":"grid","columnCount":2}} -->
+<!-- wp:post-title {"isLink":true} /-->
+
+<!-- wp:post-excerpt /-->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"space-between"}} -->
+<!-- wp:query-pagination-previous /-->
+
+<!-- wp:query-pagination-numbers /-->
+
+<!-- wp:query-pagination-next /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph {"placeholder":"Add text or blocks that will display when the query returns no results."} -->
+<p>Sorry, there are no results that match.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></div>
+<!-- /wp:group --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"uncategorized"} /-->
